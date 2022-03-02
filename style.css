@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+:root {
+    --purple: #5280e2;
+    --green: #15cdcb;
+    --bg-dark: #212226;
+    --menu-heigh: 75px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    background: var(--bg-dark);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+h1,
+h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+button {
+    background: var(--purple);
+    border: 0;
+    border-radius: 16px;
+    padding: 8px 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header {
+    /* CAULCULO DO HEADER - A ALUTURA DO MENU */
+    height: calc(100vh - var(--menu-heigh));
+    /* CENTRALIZANDO O TEXTO */
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    /* LIMITANDO A LARGURA DO TEXTO */
+    width: 50%;
+    /* DEFININDO QUE A DIV CONTAINER TERA EXATAMENTE O TAMANHO DO CONTEUDO */
+    height: fit-content;
+    /* ESPACAMENTO */
+    padding: 0 100px;
+}
+
+header .container h1 {
+    color: var(--green);
+}
+
+header .container button {
+    margin-top: 20px;
+}
+
+.logo {
+    height: 45px;
+    width: 100px;
+    border-left: solid 3px var(--purple);
+    padding-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-dark);
+    padding: 0 100px;
+    height: var(--menu-heigh);
+    /* FIXANDO A NAV AO TOP APÓS ROLAGEM */
+    position: sticky;
+    top: 0;
+}
+
+nav .logo p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+nav ul a {
+    font-size: 22px;
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+    margin: 0 35px;
+    font-weight: 200;
+}
+
+section {
+    height: 1500px;
+}
